@@ -26,7 +26,7 @@ out vec3 viewPos;
 out vec2 uv;
 void main()
 {
-    lightPos = vec3(5, 5, 5);
+    lightPos = vec3(0, 0, 0);
     viewPos = vec3(inverse(modelMatrix) * vec4(viewMatrix[3][0], viewMatrix[3][1], viewMatrix[3][2], 1));
     gl_Position = projectionMatrix * inverse(viewMatrix) * modelMatrix * vec4(position, 1);
     normal = mat3(transpose(inverse(modelMatrix))) * vertexNormal;
@@ -92,8 +92,8 @@ class VertexShaderCameraDemo(BaseScene):
         self.program_id = create_program(vertex_shader, fragment_shader)
         self.ship = ObjTextureMesh(
             self.program_id,
-            "../../assets/models/cube.obj",
-            "../../assets/textures/crate.png"
+            "../../assets/models/Wooden Crate.obj",
+            "../../assets/textures/Wooden Crate_Crate_BaseColor.png"
         )
         self.camera = Camera(self.program_id, self.screen.get_width(), self.screen.get_height())
         # glEnable(GL_CULL_FACE)
