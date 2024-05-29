@@ -1,10 +1,10 @@
 import pygame
 from OpenGL.GL import *
-from engine3.GLApp.BaseApps.BaseScene import BaseScene
-from engine3.GLApp.Camera.Camera import Camera
-from engine3.GLApp.Mesh.Light.ObjTextureMesh import ObjTextureMesh
-from engine3.GLApp.Transformations.Transformations import identity_mat, scale, rotate
-from engine3.GLApp.Utils.Utils import create_program
+from GLApp.BaseApps.BaseScene import BaseScene
+from GLApp.Camera.Camera import Camera
+from GLApp.Mesh.Light.ObjTextureMesh import ObjTextureMesh
+from GLApp.Transformations.Transformations import identity_mat, scale, rotate
+from GLApp.Utils.Utils import create_program
 
 vertex_shader = r'''
 #version 330 core

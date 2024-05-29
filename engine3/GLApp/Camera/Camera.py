@@ -3,8 +3,8 @@ import pygame
 from math import *
 from OpenGL.GLU import *
 
-from engine3.GLApp.Transformations.Transformations import identity_mat, rotate, translate
-from engine3.GLApp.Utils.Uniform import Uniform
+from GLApp.Transformations.Transformations import identity_mat, rotate, translate
+from GLApp.Utils.Uniform import Uniform
 
 
 def perspective_mat(angle_of_view, aspect_ratio, near_plane, far_plane):

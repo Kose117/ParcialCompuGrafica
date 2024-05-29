@@ -1,4 +1,4 @@
-from engine3.MainScene.MainScene import MainScene
+from MainScene.MainScene import MainScene
 
 
 def main():

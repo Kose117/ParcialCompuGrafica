@@ -1,8 +1,8 @@
 from OpenGL.GL import *
 
-from engine3.GLApp.Mesh.texture.Texture import Texture
-from engine3.GLApp.Utils.GraphicsData import GraphicsData
-from engine3.GLApp.Utils.Uniform import Uniform
+from GLApp.Mesh.texture.Texture import Texture
+from GLApp.Utils.GraphicsData import GraphicsData
+from GLApp.Utils.Uniform import Uniform
 
 
 class BaseTextureMesh:

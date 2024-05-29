@@ -4,7 +4,7 @@ import pygame
 from OpenGL.GL import *
 from pygame.locals import *
 
-from engine3.GLApp.Camera.Camera import Camera
+from GLApp.Camera.Camera import Camera
 
 
 class BaseScene:

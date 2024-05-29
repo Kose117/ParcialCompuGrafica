@@ -1,7 +1,7 @@
 import random
 from OpenGL.GL import *
 
-from engine3.GLApp.Mesh.Light.BaseTextureMesh import BaseTextureMesh
+from GLApp.Mesh.Light.BaseTextureMesh import BaseTextureMesh
 
 
 def load_mesh(filename):
