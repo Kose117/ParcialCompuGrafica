@@ -92,8 +92,8 @@ class VertexShaderCameraDemo(BaseScene):
         self.program_id = create_program(vertex_shader, fragment_shader)
         self.ship = ObjTextureMesh(
             self.program_id,
-            "../../assets/models/cube.obj",
-            "../../assets/textures/crate.png"
+            "../../assets/models/Esfera.obj",
+            "../../assets/textures/a.jpg"
         )
         self.camera = Camera(self.program_id, self.screen.get_width(), self.screen.get_height())
         # glEnable(GL_CULL_FACE)
@@ -107,7 +107,7 @@ class VertexShaderCameraDemo(BaseScene):
         glUseProgram(self.program_id)
         self.camera.update()
         transformation = identity_mat()
-        transformation = scale(transformation, 0.1, 0.1, 0.1)
+        transformation = scale(transformation, 1, 1, 1)
         # transformation = rotate(transformation, self.ship_angle_info[0], "y")
         self.ship.draw(transformation)
         # self.ship_angle_info[0] = (self.ship_angle_info[0] + self.ship_angle_info[1]) % 360

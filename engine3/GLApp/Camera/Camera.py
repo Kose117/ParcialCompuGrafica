@@ -50,13 +50,13 @@ class Camera:
         self.rotate(mouse_change.x * self.mouse_sensitivity[0], mouse_change.y * self.mouse_sensitivity[1])
 
         keys = pygame.key.get_pressed()
-        if keys[pygame.K_DOWN]:
+        if keys[pygame.K_s]:
             self.transformation = translate(self.transformation, 0, 0, self.key_sensitivity)
-        if keys[pygame.K_UP]:
+        if keys[pygame.K_w]:
             self.transformation = translate(self.transformation, 0, 0, -self.key_sensitivity)
-        if keys[pygame.K_RIGHT]:
+        if keys[pygame.K_d]:
             self.transformation = translate(self.transformation, self.key_sensitivity, 0, 0)
-        if keys[pygame.K_LEFT]:
+        if keys[pygame.K_a]:
             self.transformation = translate(self.transformation, -self.key_sensitivity, 0, 0)
 
         self.projection.load()
