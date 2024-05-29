@@ -116,15 +116,15 @@ class VertexShaderCameraDemo(BaseScene):
 
         for _ in range(self.num_pelotas):
             while True:
-                radio = np.random.uniform(0.05, 0.2)
+                radio = np.random.uniform(0.1, 0.3)
                 posicion = np.array([np.random.uniform(-1 + radio, 1 - radio),
                                      np.random.uniform(-1 + radio, 1 - radio),
                                      np.random.uniform(-1 + radio, 1 - radio)])
                 if not hay_solapamiento(posicion, radio, self.pelotas):
                     break
-            velocidad = np.array([np.random.uniform(-0.005, 0.005),
-                                  np.random.uniform(-0.005, 0.005),
-                                  np.random.uniform(-0.005, 0.005)])
+            velocidad = np.array([np.random.uniform(-0.01, 0.01),
+                                  np.random.uniform(-0.01, 0.01),
+                                  np.random.uniform(-0.01, 0.01)])
             pelota = Pelota(radio, posicion, velocidad)
             self.pelotas.append(pelota)
 
