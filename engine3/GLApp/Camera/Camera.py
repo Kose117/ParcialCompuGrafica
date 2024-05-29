@@ -58,6 +58,12 @@ class Camera:
             self.transformation = translate(self.transformation, self.key_sensitivity, 0, 0)
         if keys[pygame.K_a]:
             self.transformation = translate(self.transformation, -self.key_sensitivity, 0, 0)
+        if keys[pygame.K_SPACE]:
+            # Movimiento vertical hacia arriba
+            self.transformation = translate(self.transformation, 0, self.key_sensitivity, 0)
+        if keys[pygame.K_LSHIFT]:
+            # Movimiento vertical hacia abajo
+            self.transformation = translate(self.transformation, 0, -self.key_sensitivity, 0)
 
         self.projection.load()
         lookat = Uniform("mat4", self.transformation)

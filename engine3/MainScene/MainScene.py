@@ -1,7 +1,7 @@
 from OpenGL.GL import *
 from OpenGL.GLU import *
 
-from engine3.GLApp.BaseApps.BaseScene import BaseScene
+from GLApp.BaseApps.BaseScene import BaseScene
 
 
 class MainScene(BaseScene):
