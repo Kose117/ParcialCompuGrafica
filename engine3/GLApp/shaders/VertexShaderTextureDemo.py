@@ -7,7 +7,7 @@ from GLApp.Camera.Camera import Camera
 from GLApp.Mesh.Light.ObjTextureMesh import ObjTextureMesh
 from GLApp.Transformations.Transformations import identity_mat, scale, translate
 from GLApp.Utils.Utils import create_program
-from pelota import Pelota  # Importar Pelota desde pelota.py
+from pelota import Pelota  
 
 vertex_shader = r'''
 #version 330 core
@@ -96,8 +96,8 @@ class VertexShaderCameraDemo(BaseScene):
         self.program_id = create_program(vertex_shader, fragment_shader)
         self.caja = ObjTextureMesh(
             self.program_id,
-            "../../assets/models/cube.obj",  # Asegúrate de usar el modelo de la caja
-            "../../assets/textures/crate.png"  # Asegúrate de usar la textura de la caja
+            "../../assets/models/cube.obj",  
+            "../../assets/textures/crate.png"  
         )
         self.pelota_mesh = ObjTextureMesh(
             self.program_id,
